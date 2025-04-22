@@ -1,0 +1,13 @@
+mapper_name: "???"
+name: "???"
+
+
+data_path: ${data_path}
+num_train_samples: 30000
+num_eval_samples: 1000
+max_prompt_tokens: ${subtract:${launcher.max_length},${launcher.max_answer_length}} # Prompt only
+max_text_tokens: ${launcher.max_length} # Prompt + Text
+
+cache_dir: null
+
+num_questions: 1

@@ -1,0 +1,6 @@
+[submodule "mimic_sepsis"]
+	path = mimic_sepsis
+	url = https://github.com/starmpcc/mimic_sepsis
+[submodule "ehr_postgres"]
+	path = ehr_postgres
+	url = https://github.com/starmpcc/ehr_postgres

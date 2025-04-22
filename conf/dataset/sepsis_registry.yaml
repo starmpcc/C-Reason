@@ -1,0 +1,19 @@
+defaults:
+  - registry_dataset
+
+name: sepsis_registry
+
+question: Q{}. What would be the masked value of '{}' in section {}?
+
+num_choices: 5
+num_choices_0: ${dataset.sepsis_registry.num_choices}
+
+label_mapper: sepsis_registry
+
+serializer_name: sepsis_registry
+
+mi_cutoff: 0.5
+
+fixed_victims: null
+
+all_victims: false

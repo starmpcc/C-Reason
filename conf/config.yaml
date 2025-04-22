@@ -1,0 +1,23 @@
+defaults:
+  - _self_
+
+debug: true
+debug_samples: 150 # At least two steps
+
+data_path: "???"
+model_path: micsoft/phi-4
+
+dtype: bfloat16
+
+output_dir: ${hydra:runtime.output_dir}
+
+wandb_run_name: auto
+
+model:
+  pretrained_model_name_or_path: ${model_path}
+  torch_dtype: ${dtype:${dtype}}
+  max_length: ${launcher.max_length}
+  trust_remote_code: true
+
+hydra:
+  verbose: ${debug}

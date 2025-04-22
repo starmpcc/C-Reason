@@ -1,0 +1,8 @@
+defaults:
+  - sepsis_registry
+
+name: grpo
+
+sys_prompt: "Do not add a disclaimer or any other unnecessary sentences after the prediction.\nPut your final answer (letter choice only) within \\boxed{}."
+
+num_choices_0: ${dataset.grpo.num_choices}

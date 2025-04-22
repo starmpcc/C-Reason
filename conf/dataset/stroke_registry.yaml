@@ -1,0 +1,19 @@
+defaults:
+  - registry_dataset
+
+name: stroke_registry
+
+question: Q{}. What would be the masked value of '{}'?
+
+num_choices: 5
+num_choices_0: ${dataset.stroke_registry.num_choices}
+
+label_mapper: stroke_registry
+
+serializer_name: stroke_registry
+
+mi_cutoff: 0.5
+
+fixed_victims: null
+
+all_victims: false

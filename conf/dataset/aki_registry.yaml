@@ -1,0 +1,21 @@
+defaults:
+  - registry_dataset
+
+name: aki_registry
+
+sys_prompt: "Do not add a disclaimer or any other unnecessary sentences after the prediction.\nPut your final answer (letter choice only) within \\boxed{}."
+
+question: Q{}. What would be the masked value of '{}' in section {}?
+
+num_choices: 5
+num_choices_0: ${dataset.aki_registry.num_choices}
+
+label_mapper: sepsis_registry
+
+serializer_name: aki_registry
+
+mi_cutoff: 0.5
+
+fixed_victims: null
+
+all_victims: false

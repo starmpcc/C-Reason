@@ -1,0 +1,12 @@
+defaults:
+  - base_dataset
+
+mapper_name: registry
+
+name: "???"
+
+sys_prompt: "Do not add a disclaimer or any other unnecessary sentences after the prediction."
+
+question: "???"
+
+difficulty_const: 2.0

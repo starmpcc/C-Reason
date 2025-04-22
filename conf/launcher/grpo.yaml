@@ -1,0 +1,20 @@
+defaults:
+  - base_launcher
+
+name: grpo
+train_type: grpo
+training_arguments:
+  learning_rate: 1e-6
+  remove_unused_columns: false
+  save_strategy: "steps"
+  save_steps: 256
+
+grpo_arguments:
+  max_prompt_length: ${subtract:${launcher.max_length},${launcher.max_answer_length}}
+  max_completion_length: ${launcher.max_answer_length}
+  use_vllm: true
+  num_generations: 7
+  vllm_max_model_len: ${launcher.max_length}
+  log_completions: true
+  torch_empty_cache_steps: 1
+  sync_ref_model: true

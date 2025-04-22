@@ -1,0 +1,22 @@
+services:
+  vscode:
+    build:
+      context: .
+      network: host
+    network_mode: host
+    ipc: host
+    volumes:
+      - ..:/workspaces/LLM_Pred:cached
+    privileged: true
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
+    environment:
+      - WANDB_API_KEY=${WANDB_API_KEY}
+      - HF_TOKEN=${HF_TOKEN}
+      - HF_HUB_CACHE=${HF_HUB_CACHE}
