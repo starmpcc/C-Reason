@@ -1,6 +1,6 @@
 # C-Reason
 
-- Official Implementation of the paper: Enhancing Clinical Reasoning in Large Language Models Using Real-World Clinical Records: A Case Study Using a Nationwide Multicenter Registry [(arxiv)](https:...)
+- Official Implementation of the paper: Enhancing LLMs' Clinical Reasoning with Real-World Data from a Nationwide Sepsis Registry [(arxiv)](https:...)
 
 > **TL;DR** We propose enhancing the clinical reasoning capabilities of large language models (LLMs) by leveraging real-world clinical records. 
 By training on a sepsis registry, we developed \mname, which showed improved reasoning performance not only on the sepsis registry itself but also across other datasets.
