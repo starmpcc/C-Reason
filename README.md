@@ -1,6 +1,6 @@
 # C-Reason
 
-- Official Implementation of the paper: Enhancing LLMs' Clinical Reasoning with Real-World Data from a Nationwide Sepsis Registry [(arxiv)](https:...)
+- Official Implementation of the paper: Enhancing LLMs' Clinical Reasoning with Real-World Data from a Nationwide Sepsis Registry [(arxiv)]([https:...](http://arxiv.org/abs/2505.02722))
 
 > **TL;DR** We propose enhancing the clinical reasoning capabilities of large language models (LLMs) by leveraging real-world clinical records. 
 By training on a sepsis registry, we developed \mname, which showed improved reasoning performance not only on the sepsis registry itself but also across other datasets.
@@ -78,5 +78,13 @@ By training on a sepsis registry, we developed \mname, which showed improved rea
 
 # Citation
 ```
-WIP
+@misc{kim2025enhancingllmsclinicalreasoning,
+      title={Enhancing LLMs' Clinical Reasoning with Real-World Data from a Nationwide Sepsis Registry}, 
+      author={Junu Kim and Chaeeun Shim and Sungjin Park and Su Yeon Lee and Gee Young Suh and Chae-Man Lim and Seong Jin Choi and Song Mi Moon and Kyoung-Ho Song and Eu Suk Kim and Hong Bin Kim and Sejoong Kim and Chami Im and Dong-Wan Kang and Yong Soo Kim and Hee-Joon Bae and Sung Yoon Lim and Han-Gil Jeong and Edward Choi},
+      year={2025},
+      eprint={2505.02722},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2505.02722}, 
+}
 ```
